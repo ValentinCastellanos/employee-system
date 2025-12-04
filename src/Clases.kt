@@ -12,7 +12,7 @@ abstract class Employee : Evaluable {
 
 class Developer() : Employee() {
     override var name: String = ""
-        get() = name
+        get() = field
     override var salary: Double = 0.0
         get() = kotlin.math.round(field * 100) / 100.0
 
@@ -32,7 +32,7 @@ class Developer() : Employee() {
 
 class Manager() : Employee() {
     override var name: String = ""
-        get() = name
+        get() = field
     override var salary: Double = 0.0
         get() = kotlin.math.round(field * 100) / 100.0
 
@@ -51,7 +51,7 @@ class Manager() : Employee() {
 
 class Designer() : Employee() {
     override var name: String = ""
-        get() = name
+        get() = field
     override var salary: Double = 0.0
         get() = kotlin.math.round(field * 100) / 100.0
 

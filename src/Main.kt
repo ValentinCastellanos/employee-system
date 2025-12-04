@@ -23,14 +23,15 @@ fun main() {
     println("Introduce el salario del designer1")
     designer1.salary = readLine()!!.toDouble()
     empleados.add(designer1)
+    println("\n")
 
-    designer1.details()
 
     for (empleado in empleados) {
         empleado.details()
         empleado.work()
         empleado.calculateAnnualBonus()
         empleado.evaluatePerformance()
+        println("-------------------------------------\n")
     }
 
 }
